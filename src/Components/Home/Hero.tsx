@@ -4,7 +4,7 @@ import Navbar from "../../Components/Navbar";
 const Hero = () => {
   return (
     <header
-      className="min-h-screen bg-cover bg-center "
+      className="relative min-h-screen bg-cover bg-center "
       style={{ backgroundImage: `url(${hero})` }}
     >
       <section className=" min-h-[100vh] text-white bg-black/50">
@@ -50,9 +50,14 @@ const Hero = () => {
           </div>
         </section>
 
-        <div className="flex flex-col items-center">
-          <p className="tracking-[5px] text-xs text-gray-400">SCOPRI</p>
-          <div className="w-px h-[60px] bg-gray-400 my-6 animate-pulse"></div>
+        <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center">
+          <p className="text-[10px] font-medium tracking-[5px] text-white/60">
+            SCOPRI
+          </p>
+
+          <div className="mt-4 h-12 w-px bg-white/40">
+            <div className="h-1/2 w-full animate-pulse bg-white" />
+          </div>
         </div>
       </section>
     </header>

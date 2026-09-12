@@ -1,6 +1,7 @@
 import Diveder from "../Components/Devider";
 import CustomerReviews from "../Components/Home/CustomerReviews";
 import Features from "../Components/Home/Features";
+import Footer from "../Components/Home/Footer";
 import Hero from "../Components/Home/Hero";
 import MenuPreview from "../Components/Home/MenuPreview";
 import Philosophy from "../Components/Home/Philosophy";
@@ -21,7 +22,7 @@ const Home = () => {
           <CustomerReviews />
           <ReservationCta />
         </main>
-        <footer></footer>
+        <Footer />
       </div>
     </>
   );
