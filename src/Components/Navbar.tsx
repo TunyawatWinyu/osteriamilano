@@ -24,11 +24,10 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 z-50 w-full flex justify-between items-center transition-all duration-300 ${scrolled ? "bg-white shadow-md text-black px-[300px] py-[10px] " : "bg-transparent px-[300px] py-[20px] "}`}
+        className={`fixed top-0 left-0 z-50 w-full flex justify-between items-center px-6 lg:px-10 2xl:px-16 transition-all duration-300 ${scrolled ? "bg-white shadow-md text-black px-[300px] py-[10px] " : "bg-transparent px-[300px] py-[20px] "}`}
       >
         <a className="font-heading text-2xl tracking-widest cursor-pointer">
-          OSTERIA
-          <span className="mx-3">MILANO</span>
+          OSTERIA <span className="mx-3">MILANO</span>
         </a>
         <ul className="flex">
           {menu_navbar.map((el) => (
