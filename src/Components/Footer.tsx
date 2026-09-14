@@ -21,8 +21,14 @@ const Footer = () => {
           Autentica cucina italiana nel cuore di <span> Milano.</span>
         </span>
         <div className="flex my-5">
-          <CgInstagram size={24} color="#858585" className=" mr-4" />
-          <CgFacebook size={24} color="#858585" />
+          <CgInstagram
+            size={24}
+            className="text-[#858585] mr-4 cursor-pointer transition duration-200 ease-in-out hover:text-primary "
+          />
+          <CgFacebook
+            size={24}
+            className="text-[#858585] mr-4 cursor-pointer transition duration-200 ease-in-out hover:text-primary "
+          />
         </div>
       </div>
       <div>

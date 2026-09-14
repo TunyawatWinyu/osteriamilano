@@ -2,9 +2,9 @@ import ChefHero from "../../assets/4f9186917_generated_5beb8d56.jpg";
 
 const ChefPresentation = () => {
   return (
-    <section className="mx-auto my-24 flex max-w-7xl flex-col gap-12 px-6 lg:my-40 lg:flex-row lg:items-center lg:justify-center lg:px-16 xl:px-24 2xl:px-32">
+    <section className="mx-auto my-24 flex max-w-375 flex-col gap-12 px-6 lg:my-40 lg:flex-row lg:items-center lg:justify-center lg:gap-20 xl:px-8">
       {/* Image */}
-      <div className="relative flex-1">
+      <div className="relative w-full lg:w-120 lg:shrink-0">
         <img
           src={ChefHero}
           className="relative z-10 h-[600px] w-[450px] max-w-xl object-cover"
@@ -13,7 +13,7 @@ const ChefPresentation = () => {
       </div>
 
       {/* Text */}
-      <div className="flex-1">
+      <div className="flex flex-col w-full ">
         <div className="flex items-center gap-4">
           <div className="h-px w-12 bg-primary" />
 
@@ -22,7 +22,7 @@ const ChefPresentation = () => {
 
         <div className=" my-4">
           <h2 className="font-heading text-black text-4xl font-light md:text-5xl">
-            “Una cucina fondata sulla <br /> tradizione, ma sempre <br /> aperta
+            “Una cucina fondata sulla tradizione, ma sempre aperta
             alla ricerca.”
           </h2>
         </div>

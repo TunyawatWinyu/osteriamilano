@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Home/Footer";
+import Footer from "../Components/Footer";
 import MenuHero from "../Components/Menu/MenuHero";
 import MenuList from "../Components/Menu/MenuList";
 import CategoryFilter from "../Components/Menu/CategoryFilter";

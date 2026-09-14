@@ -2,18 +2,17 @@ import StoryHero from "../../assets/c83c6cde8_generated_86a222c6.jpg";
 
 const RestaurantStory = () => {
   return (
-    <section className="mx-auto my-24 flex max-w-7xl flex-col gap-12 px-6 lg:my-20 lg:flex-row lg:items-center lg:px-16 xl:px-24 2xl:px-32">
+    <section className="mx-auto my-24 flex max-w-[1500px] flex-col gap-12 px-6 lg:my-20 lg:flex-row lg:items-center lg:gap-20 xl:px-8">
       {/* Image */}
-      <div className="relative flex-1">
+      <div className="relative w-full lg:w-1/2 lg:shrink-0">
         <img
           src={StoryHero}
-          className="relative z-10 h-[600px] w-full max-w-xl object-cover"
+          className="relative z-10 h-150 lg:h-170 xl:h-200 w-full object-cover"
           alt="Cucina italiana"
         />
       </div>
-
       {/* Text */}
-      <div className="flex-1">
+      <div className="flex-1 xl:flex-5">
         <div className="flex items-center gap-4">
           <div className="h-px w-12 bg-primary" />
 
@@ -22,7 +21,7 @@ const RestaurantStory = () => {
           </p>
         </div>
 
-        <div className=" my-4">
+        <div className="my-4">
           <h2 className="font-heading text-black text-4xl font-light md:text-5xl">
             Una cucina fondata <br /> sulla tradizione, sempre <br /> aperta
             alla ricerca.
@@ -47,7 +46,7 @@ const RestaurantStory = () => {
 
         <div className="flex justify-between items-center">
           <div className="flex flex-col">
-            <h3 className="mr-4 font-heading text-5xl text-matcha-green">
+            <h3 className="mr-4 font-heading text-4xl text-matcha-green">
               15 +
             </h3>
 
@@ -56,15 +55,14 @@ const RestaurantStory = () => {
             </p>
           </div>
           <div className="flex flex-col">
-            <h3 className="mr-4 font-heading text-5xl text-matcha-green">40</h3>
+            <h3 className="mr-4 font-heading text-4xl text-matcha-green">40</h3>
 
             <p className="text-md mt-2 tracking-[2px] text-[#975723]">
-              RICETTE DI <br />
-              STAGIONE
+              RICETTE DI STAGIONE
             </p>
           </div>
           <div className="flex flex-col">
-            <h3 className="mr-4 font-heading text-5xl text-matcha-green">
+            <h3 className="mr-4 font-heading text-4xl text-matcha-green">
               120
             </h3>
 
