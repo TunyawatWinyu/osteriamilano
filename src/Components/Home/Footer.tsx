@@ -12,7 +12,7 @@ const Footer = () => {
     { name: "CONTATTI", path: "/contatti" },
   ];
   return (
-    <footer className="grid grid-cols-4 gap-5 px-[200px] py-[100px] bg-[#1f1c1c]">
+    <footer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-5 px-6 sm:px-10 lg:px-20 xl:px-[100px] py-16 lg:py-[100px] bg-[#1f1c1c]">
       <div className="flex flex-col">
         <a className="font-heading text-2xl text-white tracking-widest cursor-pointer my-4">
           OSTERIA <span className="mx-3">MILANO</span>

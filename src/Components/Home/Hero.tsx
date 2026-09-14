@@ -4,58 +4,157 @@ import Navbar from "../../Components/Navbar";
 const Hero = () => {
   return (
     <header
-      className="relative min-h-screen bg-cover bg-center "
+      className="relative min-h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${hero})` }}
     >
-      <section className=" min-h-[100vh] text-white bg-black/50">
+      <section className="min-h-screen bg-black/50 text-white">
         <Navbar />
 
-        <section className="mx-[300px] pt-[180px]">
+        {/* HERO CONTENT */}
+        <section
+          className="px-6
+  pt-24
+  pb-32
+  sm:px-10
+  sm:pt-32
+  lg:px-16
+  lg:pt-40
+  xl:px-24
+  xl:pt-[180px]
+  2xl:px-[300px]"
+        >
+          {/* CATEGORY */}
           <div className="flex items-center gap-4">
-            <div className="h-px w-10 bg-primary "></div>
-            <a className="text-white text-sm tracking-[5px] font-semibold">
+            <div className="h-px w-10 bg-primary" />
+
+            <a className="text-sm font-semibold tracking-[3px] sm:tracking-[5px]">
               CUCINA ITALIANA · MILANO
             </a>
           </div>
+
+          {/* TITLE */}
           <div className="py-3">
-            <h1 className="flex flex-col text-7xl font-heading">
+            <h1
+              className="
+                flex
+                flex-col
+                text-4xl
+                font-heading
+                leading-tight
+                sm:text-5xl
+                lg:text-6xl
+                xl:text-7xl
+              "
+            >
               Autentica cucina
               <span>italiana, nel</span>
               <span>cuore di Milano.</span>
             </h1>
           </div>
+
+          {/* DESCRIPTION */}
           <div className="my-3">
-            <p className="flex flex-col text-xl">
+            <p
+              className="
+                flex
+                flex-col
+                text-base
+                leading-relaxed
+                sm:text-lg
+                lg:text-xl
+              "
+            >
               Tradizione, ingredienti selezionati e passione per la cucina
-              italiana.{" "}
+              italiana.
               <span>
-                {" "}
                 Un'esperienza pensata per essere assaporata lentamente.
               </span>
             </p>
           </div>
-          <div className="my-[50px]">
+
+          {/* BUTTONS */}
+          <div
+            className="
+              mt-10
+              flex
+              flex-col
+              gap-4
+              sm:flex-row
+              sm:gap-0
+            "
+          >
             <a
               href="/prenotazione"
-              className="py-3 px-[30px] bg-white text-black  tracking-widest mr-4 transition duration-300 ease-in-out cursor-pointer hover:bg-primary hover:text-white font-semibold"
+              className="
+                inline-block
+                px-8
+                py-3
+                text-center
+                font-semibold
+                tracking-widest
+                bg-white
+                text-black
+                transition
+                duration-300
+                ease-in-out
+                hover:bg-primary
+                hover:text-white
+                sm:mr-4
+              "
             >
               PRENOTA UN TAVOLO
             </a>
+
             <a
               href="/menu"
-              className="border py-3 px-[45px] font-semibold tracking-widest cursor-pointer transition duration-300 ease-in-out hover:bg-white/15"
+              className="
+                inline-block
+                border
+                px-8
+                py-3
+                text-center
+                font-semibold
+                tracking-widest
+                transition
+                duration-300
+                ease-in-out
+                hover:bg-white/15
+                sm:px-10
+              "
             >
               SCOPRI IL MENU
             </a>
           </div>
         </section>
 
-        <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center">
-          <p className="text-[10px] font-medium tracking-[5px] text-white/60">
+        {/* SCROLL INDICATOR */}
+        <div
+          className="
+            absolute
+            bottom-5
+            left-1/2
+            flex
+            -translate-x-1/2
+            flex-col
+            items-center
+            sm:bottom-7
+            lg:bottom-8
+          "
+        >
+          <p
+            className="
+              text-[9px]
+              font-medium
+              tracking-[3px]
+              text-white/60
+              sm:text-[10px]
+              sm:tracking-[5px]
+            "
+          >
             SCOPRI
           </p>
 
-          <div className="mt-4 h-12 w-px bg-white/40">
+          <div className="mt-3 h-10 w-px bg-white/40 sm:mt-4 sm:h-12">
             <div className="h-1/2 w-full animate-pulse bg-white" />
           </div>
         </div>
