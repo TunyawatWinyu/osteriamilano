@@ -1,13 +1,6 @@
-type Dish = {
-  id: number;
-  name: string;
-  price: number;
-  description: string;
-  image?: string;
-};
-
+import { type Dish as DishType } from "../Type/Type";
 type DishCardProps = {
-  dish: Dish;
+  dish: DishType;
 };
 
 const DishCard = ({ dish }: DishCardProps) => {

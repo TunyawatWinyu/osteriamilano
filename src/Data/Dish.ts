@@ -1,4 +1,6 @@
-const dishes = [
+import { type Dish as DishType } from "../Type/Type";
+
+const dishes: DishType[] = [
   {
     id: 1,
     name: "Carbonara",
