@@ -21,40 +21,28 @@ const Menu = () => {
   });
   return (
     <header
-      className="relative h-[400px] bg-cover bg-center"
+      className="relative h-[450px] bg-cover bg-center"
       style={{ backgroundImage: `url(${menuHero})` }}
     >
-      <section className="h-[400px] bg-black/70 text-white">
+      <section className="h-[450px] bg-black/70 text-white">
         <Navbar />
 
         {/* HERO CONTENT */}
-        <section
-          className="
-            px-6
-  pt-24
-  pb-32
-  sm:px-10
-  sm:pt-32
-  lg:px-16
-  lg:pt-40
-  xl:px-24
-  xl:pt-[180px]
-  2xl:px-[300px]
-          "
-        >
+        <section className="px-6 pt-24 pb-32 sm:px-10 sm:pt-32 lg:px-16 lg:pt-40 xl:px-24 xl:pt-45 2xl:px-75 ">
           {/* CATEGORY */}
-          <div className="flex items-center gap-4">
-            <div className="h-px w-10 bg-primary" />
+          <div>
+            <div className="flex items-center gap-4">
+              <div className="h-px w-10 bg-primary" />
 
-            <a className="text-sm font-semibold tracking-[3px] sm:tracking-[5px]">
-              IL MENU
-            </a>
-          </div>
+              <a className="text-sm font-semibold tracking-[3px] sm:tracking-[5px]">
+                IL MENU
+              </a>
+            </div>
 
-          {/* TITLE */}
-          <div className="py-3">
-            <h1
-              className="
+            {/* TITLE */}
+            <div className="py-3">
+              <h1
+                className="
                 flex
                 flex-col
                 text-4xl
@@ -64,15 +52,15 @@ const Menu = () => {
                 lg:text-6xl
                 xl:text-7xl
               "
-            >
-              La nostra cucina
-            </h1>
-          </div>
+              >
+                La nostra cucina
+              </h1>
+            </div>
 
-          {/* DESCRIPTION */}
-          <div className="my-1">
-            <p
-              className="
+            {/* DESCRIPTION */}
+            <div className="my-1">
+              <p
+                className="
                 flex
                 flex-col
                 text-base
@@ -80,15 +68,16 @@ const Menu = () => {
                 sm:text-lg
                 lg:text-xl
               "
-            >
-              Piatti della tradizione italiana, preparati con ingredienti di
-              stagione
-              <span>e passione.</span>
-            </p>
+              >
+                Piatti della tradizione italiana, preparati con ingredienti di
+                stagione
+                <span>e passione.</span>
+              </p>
+            </div>
           </div>
         </section>
-        <div className="pt-6">
-          <div className="flex justify-center items-center">
+        <div className="pt-6 flex justify-center items-center">
+          <div className="flex justify-center items-center py-5 px-[200px] border border-b-gray-300 ">
             {categories.map((category) => {
               return (
                 <a
@@ -100,6 +89,9 @@ const Menu = () => {
                 </a>
               );
             })}
+          </div>
+          <div className="felx justify-center items-center">
+            
           </div>
         </div>
       </section>
