@@ -1,79 +1,77 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 🍷 Osteria Milano
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern and elegant restaurant website built with React, TypeScript and Tailwind CSS.
 
-Currently, two official plugins are available:
+Osteria Milano is a modern restaurant website designed to showcase the identity, atmosphere and culinary philosophy of an Italian restaurant.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project focuses on a refined visual experience, responsive layouts and reusable React components, combining traditional Italian aesthetics with a modern web design approach.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🏠 Responsive restaurant homepage
+- 🍝 Interactive menu presentation
+- 📖 Restaurant story and philosophy section
+- 🖼️ Responsive gallery with CSS Grid layouts
+- 📍 Restaurant location section
+- 📱 Fully responsive design
+- 🎨 Custom typography and color palette
+- 🧩 Reusable React components
+- ⚡ Fast development and production build with Vite
+- 📐 Responsive layouts with Tailwind CSS
+- ✨ Hover and transition animations
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Frontend
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-```
+### Development Tools
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- ESLint
+- Git
+- GitHub
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Project Structure
 
-```
-=======
-# osteriamilano
->>>>>>> 7e314d629d31ee0a2bd4510f84b5a96b65982b21
+```text
+osteriamilano/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   │
+│   ├── Components/
+│   │   ├── Home/
+│   │   ├── Navbar/
+│   │   ├── Footer/
+│   │   ├── Gallery/
+│   │   └── ...
+│   │
+│   ├── Data/
+│   │
+│   ├── Pages/
+│   │   ├── Home/
+│   │   ├── Menu/
+│   │   ├── Gallery/
+│   │   └── ...
+│   │
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
