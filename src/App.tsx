@@ -5,6 +5,7 @@ import Menu from "./Page/Menu";
 import Chisiamo from "./Page/Chi_siamo";
 import Gallery from "./Page/Gallery";
 import Contatti from "./Page/Contatti";
+import Prenotazione from "./Page/Prenotazione";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/chi-siamo" element={<Chisiamo />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/contatti" element={<Contatti />} />
+      <Route path="/prenotazione" element={<Prenotazione />} />
     </Routes>
   );
 }

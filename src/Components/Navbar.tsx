@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -45,11 +45,12 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <a
+        <Link
+          to="/prenotazione"
           className={`tracking-widest ${scrolled ? "bg-black text-white px-[30px] py-[10px] font-semibold cursor-pointer transition duration-300 ease-in-out hover:bg-matcha-green hover:text-white" : isHomePage ? "bg-white text-black px-[30px] py-[10px] font-semibold cursor-pointer transition duration-300 ease-in-out hover:bg-primary hover:text-white" : "bg-black text-white px-[30px] py-[10px] font-semibold cursor-pointer transition duration-300 ease-in-out hover:bg-matcha-green hover:text-white"}`}
         >
-          PRENOTA UN TAVOLO
-        </a>
+          <a>PRENOTA UN TAVOLO</a>
+        </Link>
       </nav>
     </>
   );

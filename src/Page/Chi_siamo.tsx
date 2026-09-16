@@ -10,7 +10,7 @@ const Chisiamo = () => {
   return (
     <>
       <section
-        className="relative h-[500px] bg-cover bg-center"
+        className="relative h-125 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroChiSiamo})` }}
       >
         <Navbar />
