@@ -8,20 +8,20 @@ const Hero = () => {
       style={{ backgroundImage: `url(${hero})` }}
     >
       <section className="min-h-screen bg-black/50 text-white">
-        <Navbar />
+        <Navbar  />
 
         {/* HERO CONTENT */}
         <section
           className="px-6
-  pt-24
-  pb-32
-  sm:px-10
-  sm:pt-32
-  lg:px-16
-  lg:pt-40
-  xl:px-24
-  xl:pt-[180px]
-  2xl:px-[300px]"
+          pt-24
+          pb-32
+          sm:px-10
+          sm:pt-32
+          lg:px-16
+          lg:pt-40
+          xl:px-24
+          xl:pt-[180px]
+          2xl:px-[300px]"
         >
           {/* CATEGORY */}
           <div className="flex items-center gap-4">

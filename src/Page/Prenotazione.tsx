@@ -2,6 +2,7 @@ import Navbar from "../Components/Navbar";
 import PrenotazioneHero from "../Components/Prenotazione/PrenotazioneHero";
 import prenotazioneHero from "../assets/d4cf47d52_generated_b00d7232.jpg";
 import Form from "../Components/Prenotazione/Form";
+import Footer from "../Components/Footer";
 
 const Prenotazione = () => {
   return (
@@ -16,6 +17,7 @@ const Prenotazione = () => {
       <main>
         <Form />
       </main>
+      <Footer />
     </>
   );
 };
