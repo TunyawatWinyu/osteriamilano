@@ -81,28 +81,18 @@ const DetailsContatti = () => {
             <span className="font-heading text-black font-semibold text-sm tracking-widest">
               COME ARRIVARE
             </span>
-            <button className="flex justify-center items-center gap-4 text-sm font-semibold tracking-widest border w-60 py-3 cursor-pointer transition duration-300 ease-in-out hover:bg-black hover:text-white">
+            <a
+              href="https://maps.app.goo.gl/UenA8PFfYnPLQBDu7"
+              className="flex justify-center items-center gap-4 text-sm font-semibold tracking-widest border w-60 py-3 cursor-pointer transition duration-300 ease-in-out hover:bg-black hover:text-white"
+            >
               APRI IN GOOLE MAPS <SquareShare size={15} />
-            </button>
+            </a>
           </div>
         </div>
       </div>
       {/* Image */}
       <div className="relative w-full lg:w-1/2 lg:shrink-0">
-        <div
-          className="
-      relative
-      mx-auto
-      aspect-square
-      max-w-[550px]
-      overflow-hidden
-      border
-      border-gray-200
-      bg-[#f5f5f0]
-      bg-[linear-gradient(to_right,#deded8_1px,transparent_1px),linear-gradient(to_bottom,#deded8_1px,transparent_1px)]
-      bg-[size:40px_40px]
-    "
-        >
+        <div className="relative mx-auto aspect-square max-w-[550px] overflow-hidden border  border-gray-200  bg-[#f5f5f0] bg-[linear-gradient(to_right,#deded8_1px,transparent_1px),linear-gradient(to_bottom,#deded8_1px,transparent_1px)] bg-size-[40px_40px]">
           {/* Content */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
             {/* Pin */}
@@ -131,16 +121,10 @@ const DetailsContatti = () => {
 
             {/* Google Maps */}
             <a
-              href="https://www.google.com/maps"
+              href="https://maps.app.goo.gl/UenA8PFfYnPLQBDu7"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-          mt-5
-          text-xs
-          tracking-[3px]
-          text-matcha-green
-          transition
-          hover:opacity-60
+              className=" mt-5 text-xs tracking-[3px]  text-matcha-green transition hover:opacity-60
         "
             >
               APRI IN GOOGLE MAPS

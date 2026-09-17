@@ -48,7 +48,7 @@ const LayoutImageGallery = () => {
     },
   ];
   return (
-    <section className="mx-auto max-w-[1300px] px-6 xl:py-24">
+    <section className="mx-auto max-w-[1300px] px-6 lg:py-20 xl:py-24">
       <div className="grid grid-cols-4 gap-4">
         {/* immagini */}
         {galleryImages.map((image, index) => (

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import dishes from "../../Data/Dish";
 import DishCard from "../DishCard";
 import { ArrowRight } from "reicon-react";
@@ -30,12 +31,12 @@ const MenuPreview = () => {
 
       {/* Scopri Menu */}
       <div className="flex justify-center items-center">
-        <a
-          href="/menu"
+        <Link
+          to="/menu"
           className="flex border py-3 px-[30px] font-semibold tracking-widest cursor-pointer transition duration-300 ease-in-out hover:bg-black hover:text-white"
         >
           SCOPRI IL MENU <ArrowRight className="ml-[10px]" />
-        </a>
+        </Link>
       </div>
     </section>
   );

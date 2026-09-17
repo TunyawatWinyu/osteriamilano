@@ -2,7 +2,7 @@ import hero2 from "../../assets/7199d6bc6_generated_a1aa13d0.jpg";
 
 const Philosophy = () => {
   return (
-    <section className="mx-auto my-24 flex max-w-7xl flex-col gap-12 px-6 lg:my-40 lg:flex-row lg:items-center lg:px-16 xl:px-24 2xl:px-32">
+    <section className="mx-auto my-24 flex max-w-7xl flex-col gap-12 px-6 md:flex md:flex-col md:justify-center md:items-center lg:my-40 lg:flex-row lg:items-center lg:px-16 xl:px-24 2xl:px-32">
       {/* Text */}
       <div className="flex-1">
         <div className="flex items-center gap-4">

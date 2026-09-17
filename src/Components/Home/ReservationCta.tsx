@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import reservationImage from "../../assets/be5f94efa_generated_6a41031e.jpg";
 
 const ReservationCta = () => {
@@ -33,15 +34,15 @@ const ReservationCta = () => {
           </p>
 
           {/* Button */}
-          <a
-            href="/prenotazione"
+          <Link
+            to="/prenotazione"
             className="mt-4 border bg-white px-8 py-3 font-semibold
                        tracking-widest text-black
                        transition duration-300
                        hover:bg-primary hover:text-white"
           >
             PRENOTA UN TAVOLO
-          </a>
+          </Link>
         </div>
       </div>
     </section>

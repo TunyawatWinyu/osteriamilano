@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import hero from "../../assets/hero.jpg";
 import Navbar from "../../Components/Navbar";
 
 const Hero = () => {
   return (
     <header
-      className="relative min-h-screen bg-cover bg-center"
+      className="relative min-h-screen md:min-h-0 md:h-[700px] lg:min-h-0 lg:h-[800px] bg-cover bg-center "
       style={{ backgroundImage: `url(${hero})` }}
     >
-      <section className="min-h-screen bg-black/50 text-white">
-        <Navbar  />
+      <section className="min-h-screen bg-black/50 text-white md:min-h-0 md:h-[700px] lg:min-h-0 lg:h-[800px]">
+        <Navbar />
 
         {/* HERO CONTENT */}
         <section
@@ -83,8 +84,8 @@ const Hero = () => {
               sm:gap-0
             "
           >
-            <a
-              href="/prenotazione"
+            <Link
+              to="/prenotazione"
               className="
                 inline-block
                 px-8
@@ -103,10 +104,10 @@ const Hero = () => {
               "
             >
               PRENOTA UN TAVOLO
-            </a>
+            </Link>
 
-            <a
-              href="/menu"
+            <Link
+              to="/menu"
               className="
                 inline-block
                 border
@@ -120,10 +121,11 @@ const Hero = () => {
                 ease-in-out
                 hover:bg-white/15
                 sm:px-10
+                
               "
             >
               SCOPRI IL MENU
-            </a>
+            </Link>
           </div>
         </section>
 

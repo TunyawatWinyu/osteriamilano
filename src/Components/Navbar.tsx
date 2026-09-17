@@ -28,9 +28,12 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 z-50 w-full flex justify-between items-center px-6 lg:px-10 2xl:px-70 transition-all duration-300 ${scrolled ? "bg-[#efeeeed3] backdrop-blur-md shadow-md text-black px-[300px] py-[10px] " : isHomePage ? "bg-transparent px-[300px] py-[20px]" : "bg-[#efeeeed3] backdrop-blur-md shadow-md text-black px-[300px] py-[10px] "}`}
       >
-        <a className="font-heading text-2xl tracking-widest cursor-pointer">
+        <Link
+          to="/home"
+          className="font-heading text-2xl tracking-widest cursor-pointer"
+        >
           OSTERIA <span className="mx-3">MILANO</span>
-        </a>
+        </Link>
         <ul className="flex">
           {menu_navbar.map((el) => (
             <li
