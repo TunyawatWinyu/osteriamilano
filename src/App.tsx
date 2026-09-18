@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Page/Home";
 import Menu from "./Page/Menu";
 import Chisiamo from "./Page/Chi_siamo";
@@ -10,6 +10,8 @@ import Prenotazione from "./Page/Prenotazione";
 function App() {
   return (
     <Routes>
+      {/* Pagina iniziale */}
+      <Route path="/" element={<Navigate to="/home" replace />} />
       <Route path="/home" element={<Home />} />
       <Route path="/menu" element={<Menu />} />
       <Route path="/chi-siamo" element={<Chisiamo />} />
