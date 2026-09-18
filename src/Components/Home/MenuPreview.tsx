@@ -35,48 +35,22 @@ const MenuPreview = () => {
           </h2>
         </div>
       </div>
-
       {/* Image */}
-
-      <div className="relative">
-        {/* FRECCIA SINISTRA */}
-        <button
-          type="button"
-          onClick={() => scrollCarousel("left")}
-          className="absolute left-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center border border-gray-200 bg-white/90 text-gray-700 backdrop-blur-sm transition-all duration-300 hover:bg-black hover:text-white md:hidden"
-          aria-label="Piatti precedenti"
-        >
-          <ArrowRight className="rotate-180" size={18} />
-        </button>
-
-        {/* CAROSELLO */}
-        <div
-          ref={carouselRef}
-          className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-2 md:overflow-visible lg:grid-cols-3"
-        >
-          {dishes.map((dish) => {
-            return (
-              <div
-                key={dish.id}
-                className="w-[82%] shrink-0 snap-start md:w-auto md:shrink lg:w-auto"
-              >
-                <DishCard dish={dish} />
-              </div>
-            );
-          })}
-        </div>
-
-        {/* FRECCIA DESTRA */}
-        <button
-          type="button"
-          onClick={() => scrollCarousel("right")}
-          className="absolute right-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center border border-gray-200 bg-white/90 text-gray-700 backdrop-blur-sm transition-all duration-300 hover:bg-black hover:text-white md:hidden"
-          aria-label="Piatti successivi"
-        >
-          <ArrowRight size={18} />
-        </button>
+      {/* CAROSELLO */}{" "}
+      <div className=" flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-2 md:overflow-visible lg:grid-cols-3 ">
+        {" "}
+        {dishes.map((dish) => {
+          return (
+            <div
+              key={dish.id}
+              className=" w-[82%] shrink-0 snap-start md:w-auto md:shrink "
+            >
+              {" "}
+              <DishCard dish={dish} />{" "}
+            </div>
+          );
+        })}{" "}
       </div>
-
       {/* Scopri Menu */}
       <div className="flex justify-center items-center">
         <Link
