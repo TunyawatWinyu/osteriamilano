@@ -39,7 +39,7 @@ const Footer = () => {
           {menu_navbar.map((el) => {
             return (
               <li
-                className=" text-[#858585] text-md cursor-pointer list-none my-4 transition duration-200 ease-in-out hover:text-[#b1b1b1]"
+                className=" text-[#858585] text-md cursor-pointer list-none my-4 transition duration-200 ease-in-out hover:text-primary"
                 key={el.name}
               >
                 <NavLink to={el.path} className="text-sm">
@@ -56,16 +56,40 @@ const Footer = () => {
         </h3>
         <div className="flex flex-col">
           <div className="flex">
-            <Pin className="text-[#858585] mr-4" />
-            <p className="text-[#858585]">Via XX Settembre 20, Milano</p>
+            <Pin
+              className="text-[#858585] mr-4 cursor-pointer transition hover:text-primary"
+              href="https://maps.app.goo.gl/UenA8PFfYnPLQBDu7"
+            />
+            <a
+              href="https://maps.app.goo.gl/UenA8PFfYnPLQBDu7"
+              className="text-[#858585] cursor-pointer transition hover:text-primary"
+            >
+              Via XX Settembre 20, Milano
+            </a>
           </div>
-          <div className="flex mt-4">
-            <Phone className="text-[#858585] mr-4" />
-            <p className="text-[#858585]">+39 02 1234 5678</p>
+          <div className="mt-4 flex cursor-pointer">
+            <Phone
+              className="mr-4 text-[#858585] transition hover:text-primary"
+              href="tel:+390212345678"
+            />
+            <a
+              href="tel:+390212345678"
+              className="text-[#858585] transition hover:text-primary"
+            >
+              +39 02 1234 5678
+            </a>
           </div>
-          <div className="flex mt-4">
-            <Mail className="text-[#858585] mr-4" />
-            <p className="text-[#858585]">info@osteriamilano.it</p>
+          <div className="mt-4 flex">
+            <Mail
+              className="mr-4 text-[#858585] transition hover:text-primary"
+              href="mailto:info@osteriamilano.it"
+            />
+            <a
+              href="mailto:info@osteriamilano.it"
+              className="text-[#858585] transition hover:text-primary"
+            >
+              info@osteriamilano.it
+            </a>
           </div>
         </div>
       </div>
