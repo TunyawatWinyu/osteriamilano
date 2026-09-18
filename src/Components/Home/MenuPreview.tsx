@@ -3,21 +3,7 @@ import dishes from "../../Data/Dish";
 import DishCard from "../DishCard";
 import { ArrowRight } from "reicon-react";
 
-import { useRef } from "react";
-
 const MenuPreview = () => {
-  const carouselRef = useRef<HTMLDivElement>(null);
-
-  const scrollCarousel = (direction: "left" | "right") => {
-    if (!carouselRef.current) return;
-
-    const scrollAmount = carouselRef.current.clientWidth * 0.8;
-
-    carouselRef.current.scrollBy({
-      left: direction === "right" ? scrollAmount : -scrollAmount,
-      behavior: "smooth",
-    });
-  };
   return (
     <section className="mx-auto my-24 flex flex-col max-w-7xl gap-12 px-6 lg:my-30 lg:flex-col lg:px-16 xl:px-24 2xl:px-32">
       {/* TEXT */}
