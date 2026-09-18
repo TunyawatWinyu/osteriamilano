@@ -48,9 +48,8 @@ const LayoutImageGallery = () => {
     },
   ];
   return (
-    <section className="mx-auto max-w-[1300px] px-6 md:py-20 lg:py-20 xl:py-24">
-      <div className="grid grid-cols-4 gap-4">
-        {/* immagini */}
+    <section className="mx-auto max-w-[1300px] px-4 py-12 sm:px-6 sm:py-20">
+      <div className="grid grid-cols-1 gap-3 lg:grid-cols-4 lg:gap-4">
         {galleryImages.map((image, index) => (
           <div key={index} className={`${image.className} overflow-hidden`}>
             <img

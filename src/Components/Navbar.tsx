@@ -42,7 +42,7 @@ const Navbar = () => {
         className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
           scrolled
             ? "bg-[#efeeeed3] backdrop-blur-md shadow-md"
-            : isHomePage
+            : isHomePage && !isOpen
               ? "bg-transparent"
               : "bg-[#efeeeed3] backdrop-blur-md shadow-md"
         }`}
@@ -64,7 +64,7 @@ const Navbar = () => {
           <ul className="hidden md:flex">
             {menu_navbar.map((el) => (
               <li
-                className={`px-4 text-xs cursor-pointer tracking-widest whitespace-nowrap ${scrolled || !isHomePage ? "text-black" : "text-white"}`}
+                className={`px-4 text-xs cursor-pointer tracking-widest whitespace-nowrap ${navbarText}`}
                 key={el.name}
               >
                 <NavLink
@@ -128,7 +128,7 @@ const Navbar = () => {
         >
           <div
             className={`px-6 pb-6 pt-4 ${
-              isHomePage && !scrolled ? "text-white" : "text-black"
+              isHomePage && !scrolled ? "text-black" : "text-black"
             }`}
           >
             <ul className="flex flex-col gap-5">

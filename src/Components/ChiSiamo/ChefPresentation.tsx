@@ -7,7 +7,7 @@ const ChefPresentation = () => {
       <div className="relative w-full lg:w-120 lg:shrink-0">
         <img
           src={ChefHero}
-          className="relative z-10 h-[600px] w-[450px] max-w-xl object-cover"
+          className="relative z-10 h-[500px] lg:h-[600px] lg:w-[450px] object-cover"
           alt="Cucina italiana"
         />
       </div>
@@ -22,8 +22,8 @@ const ChefPresentation = () => {
 
         <div className=" my-4">
           <h2 className="font-heading text-black text-4xl font-light md:text-5xl">
-            “Una cucina fondata sulla tradizione, ma sempre aperta
-            alla ricerca.”
+            “Una cucina fondata sulla tradizione, ma sempre aperta alla
+            ricerca.”
           </h2>
         </div>
 

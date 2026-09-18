@@ -67,7 +67,9 @@ const DetailsContatti = () => {
                 <div className="flex flex-col items-end gap-3">
                   <p className="text-sm text-gray-600">Chiuso</p>
                   <p className="text-sm text-gray-600">
-                    12:00–15:00 · 19:00–23:30
+                    <span className="block sm:inline">12:00–15:00</span>
+                    <span className="hidden sm:inline"> · </span>
+                    <span className="block sm:inline">19:00–23:30</span>
                   </p>
                   <p className="text-sm text-gray-600">12:00–23:30</p>
                   <p className="text-sm text-gray-600">12:00–22:30</p>

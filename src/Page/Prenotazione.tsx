@@ -8,7 +8,7 @@ const Prenotazione = () => {
   return (
     <>
       <section
-        className="relative h-100 lg:110 xl:h-120 2xl:h-125  bg-cover bg-center"
+        className="relative h-125 bg-cover bg-center"
         style={{ backgroundImage: `url(${prenotazioneHero})` }}
       >
         <Navbar />

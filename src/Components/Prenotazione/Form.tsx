@@ -138,11 +138,11 @@ const Form = () => {
       ) : (
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col justify-center items-center mt-20"
+          className="flex flex-col justify-center items-center mt-12 px-5 sm:mt-20"
         >
-          <div className="w-150 border-t border-t-gray-200 py-10">
+          <div className="w-full max-w-[600px] border-t border-t-gray-200 py-8 sm:py-10">
             {/* NOME E COGNOME */}
-            <div className="flex gap-6 mb-6">
+            <div className="flex flex-col gap-6 mb-6 sm:flex-row">
               <label className="flex flex-1 flex-col">
                 <span className="text-gray-400 tracking-widest">NOME *</span>
                 <input
@@ -178,7 +178,7 @@ const Form = () => {
             </div>
 
             {/* EMAIL E TELEFONO */}
-            <div className="flex gap-6 mb-6">
+            <div className="mb-6 flex flex-col gap-6 sm:flex-row">
               <label className="flex flex-1 flex-col">
                 <span className="text-gray-400 tracking-widest">EMAIL *</span>
                 <input
@@ -216,7 +216,7 @@ const Form = () => {
             </div>
 
             {/* DAT, ORA E PERSONE */}
-            <div className="flex gap-4">
+            <div className="mb-6 flex flex-col gap-6 sm:flex-row">
               <label className="flex flex-1 flex-col">
                 <span className="text-gray-400 tracking-widest">DATA *</span>
                 <input
@@ -298,7 +298,7 @@ const Form = () => {
                 ></textarea>
               </label>
             </div>
-            <div className="mt-10">
+            <div className="mt-10 flex justify-center sm:block">
               <button
                 type="submit"
                 className=" bg-black text-white px-[30px] py-[15px] tracking-widest font-semibold cursor-pointer transition duration-300 ease-in-out hover:bg-matcha-green hover:text-white"
